@@ -1,0 +1,7 @@
+# Ignored files and folders
+/.env
+/.idea
+/vendor
+/node_modules
+.DS_Store
+# build
