@@ -132,9 +132,6 @@
       "node"
     ]
   },
-  "engines": {
-    "node": "9.10.0"
-  },
   "main": "lib/index.js",
   "license": "ISC",
   "homepage": "./"
