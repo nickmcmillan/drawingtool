@@ -148,7 +148,9 @@ class App extends Component {
     })
   }
 
-  handleSerialize = () => exportJSON(this.canvas, true, this.state.iconType)
+  handleSerialize = () => exportJSON(this.canvas, false, this.state.iconType)
+
+  handleImportJSON = () => importJSON(window.prompt() || {}, this.canvas, false, this.state.iconType)
 
   setField = e => setField({
     e,
@@ -205,6 +207,7 @@ class App extends Component {
               clearCanvas={this.handleClearCanvas}
               destroy={this.props.handleDestroy}
               serialize={this.handleSerialize}
+              importJSON={this.handleImportJSON}
               iconType={this.state.iconType}
             />
 

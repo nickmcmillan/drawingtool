@@ -9,7 +9,7 @@ const Header = ({onLegendClick}) => (
       <button className="Header_Btn" onClick={onLegendClick} data-bind="js-legend-toggle">
         Legenda
       </button>
-      <button className="Header_Btn">
+      {/* <button className="Header_Btn">
         Annuleer
       </button>
       <button className="Header_Btn Header_Btn--primary">
@@ -25,7 +25,7 @@ const Header = ({onLegendClick}) => (
             </g>
           </g>
         </svg>
-      </button>
+      </button> */}
     </div>
   </header>
 )
