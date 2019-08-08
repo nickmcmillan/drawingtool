@@ -19,10 +19,10 @@ import goal03 from '../assets/goals/goal03.svg'
 // fields
 import field01 from '../assets/fields/field01.svg'
 import field02 from '../assets/fields/field02.svg'
-import field03 from '../assets/fields/field03.svg'
-import field04 from '../assets/fields/field04.svg'
-import field05 from '../assets/fields/field05.svg'
-import field06 from '../assets/fields/field06.svg'
+// import field03 from '../assets/fields/field03.svg'
+// import field04 from '../assets/fields/field04.svg'
+// import field05 from '../assets/fields/field05.svg'
+// import field06 from '../assets/fields/field06.svg'
 
 export const shirtTypes = [
   {

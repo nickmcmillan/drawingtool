@@ -40,6 +40,7 @@ let instances = {}
 function Tekentool(elApp, options) {
   const queryElement = getQueryElement(elApp)
   if (!queryElement) {
+    /* eslint-disable */
     console.error('Bad element for Tekentool: ' + (queryElement || elApp))
     return
   }

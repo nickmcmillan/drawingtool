@@ -67,14 +67,14 @@ class Editor extends Component {
         <span className="Editor_Caption">{translateCaption(variationCaption)}</span>
         {this.state.variation === 'shirt' &&
           <div className="Editor_Input-wrapper">
-            <span className="Editor_Input-name">Rugnummer</span>
+            <span className="Editor_Input-name">Shirt number</span>
 
             <input type="text" className="Editor_Input" maxLength="2" onChange={this.handleInputChange} value={this.state.shirtInputVal} />
           </div>
         }
         {this.state.variation === 'goal' &&
           <button onClick={this.handleRotate} className="Button--Editor">
-            Roteer
+            Rotate
             <svg className="Editor_Icon" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" version="1.1">
               <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                 <g transform="translate(-1107, -745)" fill="currentColor">
@@ -96,7 +96,7 @@ class Editor extends Component {
         {this.state.variation !== 'line' &&
         // lines do not get a copy button, everything else does
           <button onClick={this.handleCopy} className="Button--Editor">
-            Kopieer
+            Copy
             <svg className="Editor_Icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" version="1.1">
               <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                 <g transform="translate(-1113, -753)" fill="currentColor">
@@ -116,7 +116,7 @@ class Editor extends Component {
           </button>
         }
         <button onClick={this.handleRemove} className="Button--Editor">
-          Verwijder
+          Delete
           <svg className="Editor_Icon" xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" version="1.1">
             <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
               <g transform="translate(-1237, -746)" fill="#F36C21" fillRule="nonzero">

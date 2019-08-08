@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 .App-container {
   user-select: none;
@@ -12,7 +12,7 @@
   }
 }
 
-.Canvas-isEditorMode { 
+.Canvas-isEditorMode {
   margin: 0 auto;
   min-width: 320px;
   width: 100%;
@@ -42,7 +42,7 @@
     max-height: $canvasHeight;
   }
 
-  .Canvas-isEditorMode {  
+  .Canvas-isEditorMode {
     position: relative;
     flex-shrink: 0;
     max-width: $canvasWidth;
@@ -52,5 +52,4 @@
       padding: 0;
     }
   }
-  
 }

@@ -2,12 +2,12 @@ import React from 'react'
 
 import './Aside.scss'
 
-const Aside = ({ children }) => (
-  <aside className="Aside">
-    {/* <button data-bind="js-aside-toggle" className="Aside_Toggle">
-      +
-      <span className="u-visuallyhidden">Toggle Controls</span>
-    </button> */}
+const Aside = ({ children, showAside, handleShowAside }) => (
+  <aside
+    className={`Aside${showAside ? ' Aside--visible' : ''}`}
+    onClick={() => { handleShowAside(false) }}
+    // onTouchEnd={() => { handleShowAside(false) }}
+  >
     <div className="Aside_Inner">
 
       {children}

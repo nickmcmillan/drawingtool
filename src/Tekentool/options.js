@@ -2,7 +2,7 @@
 
 export const backgroundColor = '#7ccaa0' // soccer pitch green
 export const lineControlStyles = {
-  radius: 12,
+  radius: 18,
   fill: 'transparent',
   stroke: '#fff',
   strokeWidth: 3,

@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 .Aside_Toggle {
   position: fixed;
@@ -33,7 +33,7 @@
   direction: ltr;
 }
 
-.Aside--is-visible {
+.Aside--visible {
   visibility: visible;
   transform: none;
 }

@@ -12,8 +12,6 @@ import exportJSON from '../serialize/exportJSON'
 import cursorSVG from '../assets/custom-cursor.svg'
 
 // Components
-import Header from './Header/Header'
-import Legend from './Legend/Legend'
 import Canvas from './Canvas/Canvas'
 import Main from './Main/Main'
 import Aside from './Aside/Aside'
@@ -43,10 +41,10 @@ class App extends Component {
       goalTypes: [],
       itemTypes: [],
       coneTypes: [],
-      isLegendVisible: false,
       fieldSelected: null,
       lineSelected: null,
       iconType: 'defaultIcon',
+      showAside: false,
     }
   }
 
@@ -114,10 +112,6 @@ class App extends Component {
     }
   }
 
-  onLegendClick = () => this.setState(prevState => ({
-    isLegendVisible: !prevState.isLegendVisible
-  }))
-
   setLineType = e => {
     const lineSelected = e.target.dataset.variation
 
@@ -165,24 +159,16 @@ class App extends Component {
     return (
       <div className="App-container">
 
-        <Header onLegendClick={this.onLegendClick} />
-        <Legend
-          isVisible={this.state.isLegendVisible}
-          onLegendClick={this.onLegendClick}
-          iconType={this.state.iconType}
-          goalTypes={this.state.goalTypes}
-          itemTypes={this.state.itemTypes}
-          coneTypes={this.state.coneTypes}
-          shirtTypes={this.state.shirtTypes}
-        />
-
         <Main
           canvas={this.canvas}
           canvasEl={this.canvasRef.current}
           iconType={this.state.iconType}
         >
 
-          <Aside>
+          <Aside
+            showAside={this.state.showAside}
+            handleShowAside={() => this.setState({ showAside: false })}
+          >
             <Items
               goalTypes={this.state.goalTypes}
               itemTypes={this.state.itemTypes}
@@ -230,6 +216,11 @@ class App extends Component {
           </div>
 
         </Main>
+
+        <button className="Aside_Toggle" onClick={() => this.setState({ showAside: !this.state.showAside })}>
+          +
+          <span className="u-visuallyhidden">Toggle Controls</span>
+        </button>
       </div>
     )
   }

@@ -14,7 +14,7 @@ const Items = ({
 }) => (
 
   <section id="draggable-container" className="Section">
-    <h2 className="Section-heading">Spelers &amp; Spullen</h2>
+    <h2 className="Section-heading">Drag &amp; drop items on the pitch</h2>
 
     <div className="Section_inner">
       <div className="Section_Asset-row">

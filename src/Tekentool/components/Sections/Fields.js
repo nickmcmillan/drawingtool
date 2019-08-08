@@ -11,7 +11,7 @@ const Fields = ({
 }) => (
 
   <section id="field-container" className="Section">
-    <h2 className="Section-heading">Velden</h2>
+    <h2 className="Section-heading">Field type</h2>
     <div className="Section_Inner-grid">
 
       {fieldTypes.map(item => (

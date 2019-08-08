@@ -6,7 +6,7 @@ import './Section.scss'
 const Lines = ({ setLineType, lineSelected }) => (
 
   <section id="line-control-container" className="Section Line-control-container">
-    <h2 className="Section-heading">Pijlen</h2>
+    <h2 className="Section-heading">Draw lines</h2>
     <div className="Section_Line-Btns">
       <button onClick={setLineType} data-variation="line-dotted" className={`Button Button--alt${lineSelected === 'line-dotted' ? ' Button--active' : ''}`}>
         <span className="u-visuallyhidden">Draw with dotted line</span>

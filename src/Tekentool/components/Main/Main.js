@@ -115,7 +115,6 @@ class Main extends Component {
         onTouchEnd={this.handleEnd}
       >
         {this.props.children}
-
       </main>
     )
   }

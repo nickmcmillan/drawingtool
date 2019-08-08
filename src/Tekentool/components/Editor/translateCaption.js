@@ -3,45 +3,45 @@ export default variation => {
   switch (variation) {
     // Shirts
     case 'shirt-attack':
-      return 'Aanvaller'
+      return 'Attacker'
     case 'shirt-defend':
-      return 'Verdediger'
+      return 'Defender'
     case 'shirt-trainer':
       return 'Trainer / Coach'
 
     // Goals
     case 'goal-01':
-      return 'Senioren doel'
+      return 'Large goal'
     case 'goal-02':
-      return 'Pupillen doel'
+      return 'Small goal'
     case 'goal-03':
-      return 'Mini doel'
+      return 'Mini goal'
 
     // Lines
     case 'line-dotted':
-      return 'Lopen zonder bal'
+      return 'Walk'
     case 'line-solid':
       return 'Pass'
     case 'line-squiggley':
-      return 'Dribbelen met bal'
+      return 'Dribble'
     case 'line-shot':
-      return 'Schot'
+      return 'Shot'
 
     // Cones
     case 'cone-white':
-      return 'Hoed (wit)'
+      return 'Cone (white)'
     case 'cone-yellow':
-      return 'Hoed (geel)'
+      return 'Cone (yellow)'
     case 'cone-orange':
-      return 'Hoed (oranje)'
+      return 'Cone (orange)'
     case 'cone-purple':
-      return 'Hoed (purper)'
+      return 'Cone (purple)'
 
     // Items
     case 'ball':
-      return 'Voetbal'
+      return 'Ball'
     case 'witches-hat':
-      return 'Pion'
+      return 'Hat'
 
     default:
       return ''
