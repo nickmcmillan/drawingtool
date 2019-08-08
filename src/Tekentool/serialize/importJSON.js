@@ -29,9 +29,9 @@ export default (input: ?{}, canvas, isDisplayOnly: bool, iconType) => {
 
     // adjust the stack ordering of goal items.
     // if (o.variation.includes('goal')) {
-      // const isFlipped = o.get('flipY')
-      // in a timeout because fabric hasn't rendered yet
-      // if (isFlipped) setTimeout(() => o.bringToFront(), 0)
+    // const isFlipped = o.get('flipY')
+    // in a timeout because fabric hasn't rendered yet
+    // if (isFlipped) setTimeout(() => o.bringToFront(), 0)
     // }
 
     // dont modify colors of alternate icons
